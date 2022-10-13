@@ -19,4 +19,9 @@ return [
      * The path to node executable
      */
     'path_to_node' => env('MJML_PATH_TO_NODE', ''),
+    
+    /*
+     * The working directory for the mjml command execution
+     */
+    'working_directory' => env('MJML_WORKING_DIRECTORY'),
 ];
