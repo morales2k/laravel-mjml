@@ -50,7 +50,7 @@ class MJML
     public function buildCmdLineFromConfig()
     {
         return implode(' ', [
-            'node',
+            config('mjml.path_to_node').'node',
             config('mjml.auto_detect_path') ? $this->detectBinaryPath() : config('mjml.path_to_binary'),
             $this->path,
             '-o',
